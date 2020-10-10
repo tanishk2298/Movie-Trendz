@@ -8,7 +8,7 @@ background : ${props =>
         rgba(0,0,0,0) 70%,
         rgba(0,0,0,0.8) 100%
     ),
-    url('${props.image}'), #1c1c1c`};
+    url('${props.image}'), #000`};
 
     background-size :  100%, cover;
     background-position : center, center;
