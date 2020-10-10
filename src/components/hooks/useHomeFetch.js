@@ -16,13 +16,13 @@ export const useHomeFetch = () => {
         setLoading(true)
 
         try{
-            const result = await (await fetch(endpoint)).json()
+            const result = await (await fetch(endpoint)).json();
             setState(prev => ({
                 ...prev,
                 movies : [...result.results],
                 heroImage : prev.heroImage || result.results[0],
                 currentPage : result.page,
-                totalPages : result.total_Pages
+                totalPages : result.total_pages
             }))
         }
         catch(error){
@@ -36,5 +36,5 @@ export const useHomeFetch = () => {
         fetchMovies(`${API_URL}movie/popular?api_key=${API_KEY}`);
     }, [])
 
-    return [{state, loading, error}, fetchMovies]
+    return [{state, loading, error}, fetchMovies];
 }
