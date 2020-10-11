@@ -5,8 +5,9 @@ export const StyledGrid = styled.div`
   margin: 0 auto;
   padding: 0 20px;
   h1 {
-    font-family: 'Abel', sans-serif;
-    font-size: 42px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 32px;
+    color : #16d47b;
 
     @media screen and (max-width: 768px) {
       font-size: 22px;
@@ -16,19 +17,23 @@ export const StyledGrid = styled.div`
 
 export const StyledGridContent = styled.div`
   display: grid;
-  grid-template-columns: repeat(5, minmax(100px, 1fr));
-  grid-gap: 40px;
+  grid-template-columns: repeat(6, minmax(90px, 1fr));
+  grid-gap: 32px;
   position: relative;
 
   .grid-element {
-    animation: animateGrid 0.5s;
+    transition : transform .4s ease;
+    box-shadow : 0 6px 20px 0 rgba(0,0,0,.3);
+    animation: animateGrid 0.4
   }
 
   @keyframes animateGrid {
     from {
       opacity: 0;
+      transform : scale(1);
     }
     to {
+      transform : scale(1.1);
       opacity: 1;
     }
   }

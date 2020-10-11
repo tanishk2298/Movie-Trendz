@@ -1,4 +1,4 @@
-import React, {Fragment, useState, useEffect} from 'react'
+import React, {Fragment, useState} from 'react'
 import Grid from './elements/Grid'
 import HeroImage from './elements/HeroImage'
 import SearchBar from './elements/SearchBar'
@@ -6,6 +6,7 @@ import MovieThumb from './elements/MovieThumb'
 import LoadMoreBtn from './elements/LoadMoreBtn'
 import Spinner from './elements/Spinner'
 import {useHomeFetch} from './hooks/useHomeFetch'
+import NoImage from './images/not_found.jpg'
 import {
     API_URL,
     API_KEY,
@@ -18,6 +19,7 @@ import {
 const Home = () => {
 
     const [{state, loading, error}, fetchMovies] = useHomeFetch()
+    const [searchTerm, setSearchTerm] = useState('');
     console.log(state)
 
     if(error) return<div>Something went wrong.....</div>;
@@ -31,7 +33,19 @@ const Home = () => {
                text={state.heroImage.overview}
             />
             <SearchBar/>
-            <Grid/>
+            <Grid header={searchTerm ? 'Search Result' : 'Trending Today'}>
+                {state.movies.map(movie => (
+                    <MovieThumb
+                        key={movie.id}
+                        clickable
+                        image={
+                            movie.poster_path ? `${IMAGE_BASE_URL}${POSTER_SIZE}${movie.poster_path}` : NoImage
+                        }
+                        movieId={movie.id}
+                        movieName={movie.original_title}
+                    />
+                ))}
+            </Grid>
             <MovieThumb/>
             <Spinner/>
             <LoadMoreBtn/>
