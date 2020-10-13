@@ -1,15 +1,15 @@
 import styled from 'styled-components';
 
 export const StyledLoadMoreBtn = styled.button`
-  background: #000;
+  background: #16d47b;
   width: 25%;
   min-width: 200px;
   height: 70px;
-  color: #fff;
+  color: #eee;
   cursor: pointer;
   transition: all 0.3s;
   border-radius: 40px;
-  font-family: 'Abel', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-size: 28px;
   max-width: 1280px;
   display: block;
@@ -19,5 +19,8 @@ export const StyledLoadMoreBtn = styled.button`
 
   :hover {
     opacity: 0.8;
+    border : 1px solid #16d47b;
+    color : #16d47b;
+    background : #000;
   }
 `;

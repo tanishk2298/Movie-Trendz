@@ -1,4 +1,5 @@
 import React from 'react'
+import {StyledLoadMoreBtn} from '../styles/StyledLoadMoreBtn'
 
 const LoadMoreBtn = () => {
     return (

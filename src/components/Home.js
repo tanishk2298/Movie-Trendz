@@ -9,8 +9,7 @@ import {useHomeFetch} from './hooks/useHomeFetch'
 import NoImage from './images/not_found.jpg'
 import {
     API_URL,
-    API_KEY,
-    API_BASE_URL,
+    API_KEY, 
     POSTER_SIZE,
     BACKDROP_SIZE,
     IMAGE_BASE_URL
@@ -20,7 +19,12 @@ const Home = () => {
 
     const [{state, loading, error}, fetchMovies] = useHomeFetch()
     const [searchTerm, setSearchTerm] = useState('');
+
     console.log(state)
+
+    const loadMoreMovies = () => {
+        
+    }
 
     if(error) return<div>Something went wrong.....</div>;
     if(!state.movies[0]) return <Spinner/>;
@@ -46,9 +50,8 @@ const Home = () => {
                     />
                 ))}
             </Grid>
-            <MovieThumb/>
-            <Spinner/>
-            <LoadMoreBtn/>
+            { loading && <Spinner/>}
+            <LoadMoreBtn text="&#709;" callback={loadMoreMovies}/>
         </Fragment>
     )
 }
