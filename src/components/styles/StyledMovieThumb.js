@@ -11,6 +11,7 @@ export const StyledMovieThumb = styled.div`
 
     :hover {
       opacity: 0.8;
+      transform : scale(1.02)
     }
 
     /* @media screen and (max-width: 1024px) {
