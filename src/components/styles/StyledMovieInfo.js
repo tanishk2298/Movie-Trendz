@@ -11,7 +11,9 @@ export const StyledMovieInfo = styled.div`
   width: 100%;
   padding: 40px 20px;
   box-sizing: border-box;
-  animation: animateMovieinfo 1s;
+  animation: animateMovieinfo 0.4s;
+  animation-timing-function: ease-in;
+    -webkit-animation-timing-function: ease-in;
 
   .movieinfo-content {
     max-width: 1280px;
@@ -31,15 +33,16 @@ export const StyledMovieInfo = styled.div`
     }
   }
 
+
   .movieinfo-text {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Montserrat', sans-serif;
     padding: 40px;
     color: #fff;
     overflow: hidden;
 
     h1 {
-      font-family: 'Abel', sans-serif;
-      font-size: 48px;
+      font-family: 'Montserrat', sans-serif;
+      font-size: 44px;
       margin: 0;
 
       @media screen and (max-width: 1000px) {
@@ -48,15 +51,16 @@ export const StyledMovieInfo = styled.div`
     }
 
     h3 {
-      font-size: 16px;
+      font-size: 18px;
       line-height: 0;
       margin-top: 30px;
     }
 
     p {
-      font-family: 'Abel', sans-serif;
-      font-size: 18px;
-      line-height: 26px;
+      font-family: 'Montserrat', sans-serif;
+      font-size: 16px;
+      line-height: 28px;
+      font-weight: 100;
     }
   }
 
@@ -65,17 +69,12 @@ export const StyledMovieInfo = styled.div`
     justify-content: flex-start;
   }
 
+  .star{
+    color : #16d47b;
+  }
+
   .score {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 35px;
-    height: 35px;
-    background: #fff;
-    color: #000;
-    font-weight: 800;
-    border-radius: 25px;
-    margin: 0px 0 0 0;
+    font-size : 20px;
   }
 
   .director {
@@ -86,17 +85,43 @@ export const StyledMovieInfo = styled.div`
     }
   }
 
-  @media screen and (max-width: 768px) {
+  .date {
+    margin: 0 0 0 40px;
+
+    p {
+      margin: 0;
+    }
+  }
+
+  @media screen and (max-width: 1087px) {
     min-height: 600px;
     height: auto;
+
+    .rating{
+      display : none;
+    }
   }
 
   @keyframes animateMovieinfo {
-    from {
-      opacity: 0;
+    0% {
+        transform: scale(1.08,1.08);
+        opacity : 0;
     }
-    to {
-      opacity: 1;
+    25% {
+        transform: scale(1.06,1.06);
+        opacity : 0.2;
+    }
+    50% {
+        transform: scale(1.04,1.04);
+        opacity : 0.4;
+    }
+    75% {
+        transform: scale(1.02,1.02);
+        opacity : 0.6;
+    }
+    100% {
+        transform: scale(1,1);
+        opacity : 1;
     }
   }
 `;
