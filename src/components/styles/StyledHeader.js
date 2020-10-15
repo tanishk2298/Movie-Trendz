@@ -28,13 +28,13 @@ export const StyledLogo = styled.img`
 `;
 
 export const StyledGithub = styled.img`
-    width : 50px;
-    margin-top : 0px;
+    width : 46px;
+    margin-top : 4px;
     float : right;
 
     @media screen and (max-width : 500px){
         display : inline-block;
-        width : 10%;
+        width : 38px;
         margin-top : 0px;
     }
 `;

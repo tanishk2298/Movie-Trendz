@@ -9,7 +9,7 @@ const Header = () => (
     <StyledHeader>
         <div className="header-content">
             <Link to="/">
-                <StyledLogo src={Logo} alt="logo" target="_blank" className="logo"/>
+            <StyledLogo src={Logo} alt="logo" target="_blank" className="logo"/>
             </Link>
             <a href="https://github.com/tanishk2298">
                 <StyledGithub src={github} alt="github" className="logo"/>
@@ -19,3 +19,5 @@ const Header = () => (
 )
 
 export default Header
+
+//
