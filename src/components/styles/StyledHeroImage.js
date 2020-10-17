@@ -44,17 +44,17 @@ background : ${props =>
         bottom : 40px;
         margin-right : 20px;
         min-height :100px;
-        color : #fff;
-        margin-left : 4%;
+        color : #eee;
+        margin-left : 8%;
 
         h1{
             font-family : 'Montserrat', sans-serif;
             font-size : 48px;
-            color : #fff;
+            color : #eee;
 
             @media screen and (max-width : 720px){
                 font-size : 36px;
-                color : #fff;
+                color : #eee;
             }
         }
 
@@ -62,13 +62,13 @@ background : ${props =>
             font-family : 'Montserrat', sans-serif;
             font-size : 20px;
             line-height : 24px;
-            color : #fff;
+            color : #eee;
             font-weight : 100;
 
             @media screen and (max-width : 720px){
                 font-size : 16px;
                 line-height : 20px;
-                color : #fff;
+                color : #eee;
             }
         }
 

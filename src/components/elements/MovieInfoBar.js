@@ -13,15 +13,11 @@ const MovieInfoBar = ({time, budget,revenue,popularity}) => {
                 </div>
                 <div className="movieinfobar-content-col">
                     <FontAwesome className="fa-budget" name="money" size="2x" style={{color:'#16d47b'}}/>
-                    <span className="movieinfobar-info">Budget : {convertMoney(budget)}</span>
+                    <span className="movieinfobar-info">Budget : {(convertMoney(budget) !== "$0") ? convertMoney(budget) : "NA"}</span>
                 </div>
                 <div className="movieinfobar-content-col">
                     <FontAwesome className="fa-revenue" name="ticket" size="2x" style={{color:'#16d47b'}}/>
-                    <span className="movieinfobar-info">Revenue : {convertMoney(revenue)}</span>
-                </div>
-                <div className="movieinfobar-content-col">
-                    <FontAwesome className="fa-chart-line" name="ticket" size="2x" style={{color:'#16d47b'}}/>
-                    <span className="movieinfobar-info">Popularity : {popularity}</span>
+                    <span className="movieinfobar-info">Revenue : {(convertMoney(revenue) !== "$0") ? convertMoney(revenue) : "NA"}</span>
                 </div>
             </div>
         </StyledMovieInfoBar>

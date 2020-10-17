@@ -10,8 +10,8 @@ const Actor = ({actor}) => {
                 src = {actor.profile_path ? `${IMAGE_BASE_URL}${POSTER_SIZE}${actor.profile_path}` : NoImage}
                 alt = "actor"
             />
-            <span className="actor-name">{actor.name}</span>
-            <span className="actor-character">{actor.character && `as ${actor.character}`}</span>
+            <span className="actor-name">{actor.name}{actor.character && " as "}</span>
+            <span className="actor-character">{actor.character}</span>
         </StyledActor>
     )
 }

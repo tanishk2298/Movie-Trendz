@@ -11,6 +11,7 @@ export const StyledMovieInfo = styled.div`
   width: 100%;
   padding: 40px 20px;
   box-sizing: border-box;
+  box-shadow: inset 10px 100px 250px #000000, inset -1px -1px 25px #000000;
   animation: animateMovieinfo 0.4s;
   animation-timing-function: ease-in;
     -webkit-animation-timing-function: ease-in;

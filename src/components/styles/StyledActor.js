@@ -1,12 +1,13 @@
 import styled from 'styled-components';
 
 export const StyledActor = styled.div`
-  font-family: 'Abel', sans-serif;
-  color: #fff;
-  background: #1c1c1c;
+  font-family: 'Montserrat', sans-serif;
+  color: #eee;
+  background: #0B0B0D;
   border-radius: 20px;
-  padding: 5px;
+  padding: 0px;
   text-align: center;
+  transition : ease 0.4s;
 
   img {
     display: block;
@@ -18,7 +19,7 @@ export const StyledActor = styled.div`
 
   .actor-name {
     display: block;
-    font-size: 18px;
+    font-size: 14px;
     margin: 10px 0 0 0;
   }
 
@@ -26,5 +27,10 @@ export const StyledActor = styled.div`
     display: block;
     font-size: 16px;
     margin: 0 0 10px 0;
+    color : #16d47b;
+  }
+
+  :hover{
+    transform : scale(1.02);
   }
 `;

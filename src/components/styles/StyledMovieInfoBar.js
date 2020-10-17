@@ -21,13 +21,13 @@ export const StyledMovieInfoBar = styled.div`
 
   .movieinfobar-content-col {
     float: left;
-    width: 25%;
+    width: 33%;
     box-sizing: border-box;
-    padding: 10px 20px 0 0;
+    padding: 10px 0px 8px 80px;
   }
 
   .movieinfobar-info {
-    padding: 5px 0 0 10px;
+    padding-left: 10px;
     float: left;
   }
 
@@ -35,11 +35,13 @@ export const StyledMovieInfoBar = styled.div`
   .fa-revenue {
     float: left;
     margin-top: -4px;
+    font-size : 28px;
   }
 
   .fa-budget {
     float: left;
     margin-top: -4px;
+    font-size : 28px;
   }
 
   @media screen and (max-width: 768px) {
@@ -48,6 +50,12 @@ export const StyledMovieInfoBar = styled.div`
     .fa-budget {
       display: none;
     }
+  .movieinfobar-content-col {
+    float: left;
+    width: 33%;
+    box-sizing: border-box;
+    padding: 10px 20px 0px 0px;
+  }
   }
 
   @media screen and (max-width: 425px) {
