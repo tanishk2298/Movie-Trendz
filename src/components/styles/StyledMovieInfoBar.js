@@ -4,24 +4,24 @@ export const StyledMovieInfoBar = styled.div`
   display: flex;
   align-items: center;
   width: 100%;
-  min-height: 100px;
+  height: 70px;
   height: auto;
-  background: #1c1c1c;
-  padding: 20px;
+  background: #0B0B0D;
+  padding: 14px 20px;
   box-sizing: border-box;
-  font-family: 'Abel', sans-serif;
-  font-size: 20px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
 
   .movieinfobar-content {
     max-width: 1280px;
     width: 100%;
     margin: 0 auto;
-    color: #fff;
+    color: #eee;
   }
 
   .movieinfobar-content-col {
     float: left;
-    width: 33.33%;
+    width: 25%;
     box-sizing: border-box;
     padding: 10px 20px 0 0;
   }
@@ -39,7 +39,7 @@ export const StyledMovieInfoBar = styled.div`
 
   .fa-budget {
     float: left;
-    margin-top: -3px;
+    margin-top: -4px;
   }
 
   @media screen and (max-width: 768px) {
