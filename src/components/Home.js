@@ -14,11 +14,12 @@ import {
     SEARCH_BASE_URL,
     POPULAR_BASE_URL
 } from '../config'
+import NotFound from './NotFound'
 
 const Home = () => {
 
     const [{state : 
-            {movies, currentPage, totalPages, heroImage}, 
+            {movies, currentPage, heroImage}, 
             loading,
             error}, 
             fetchMovies
@@ -41,8 +42,8 @@ const Home = () => {
         fetchMovies(endpoint)
     }
 
-    if(error) return<div>Something went wrong.....</div>;
-    if(!movies[0]) return <Spinner/>;
+    if(error) return <NotFound/>;
+    if(!movies[0]) return <NotFound/>;
 
     return (
         <Fragment>
@@ -50,7 +51,7 @@ const Home = () => {
                 <HeroImage 
                     image={`${IMAGE_BASE_URL}${BACKDROP_SIZE}${heroImage.backdrop_path}`}
                     title={heroImage.original_title}
-                text={heroImage.overview}
+                    text={heroImage.overview}
                 />
             }
             <SearchBar callback={searchMovies}/>

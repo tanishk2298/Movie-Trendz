@@ -19,22 +19,22 @@ export const StyledHeader = styled.div`
 `;
 
 export const StyledLogo = styled.img`
-    width : 250px;
-    margin-top : 5px;
+    width : 270px;
+    margin-top : -5px;
 
     @media screen and (max-width : 500px){
-        width : 150px;
+        width : 170px;
     }
 `;
 
 export const StyledGithub = styled.img`
-    width : 46px;
+    width : 42px;
     margin-top : 4px;
     float : right;
 
     @media screen and (max-width : 500px){
         display : inline-block;
-        width : 38px;
+        width : 32px;
         margin-top : 0px;
     }
 `;

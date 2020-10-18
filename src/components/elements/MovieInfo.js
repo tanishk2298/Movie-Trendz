@@ -23,7 +23,7 @@ const MovieInfo = ({movie}) => {
                     <div className="rating-director">
                         <div>
                             <h3><span className="rating">IMDB</span> Rating</h3>
-                            <div className="score"><span className="rating">&nbsp;&nbsp;&nbsp;</span>{movie.vote_average}&nbsp;<FontAwesome className="fa-star" style={{color: '#16d47b'}}/>
+                            <div className="score"><span className="rating">&nbsp;&nbsp;&nbsp;</span>{movie.vote_average}&nbsp;<FontAwesome className="fa-star" name="star" style={{color: '#16d47b'}}/>
                             </div> 
                         </div>
                         <div className="director">

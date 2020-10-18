@@ -6,7 +6,7 @@ export const StyledGrid = styled.div`
   padding: 0 20px;
   h1 {
     font-family: 'Montserrat', sans-serif;
-    font-size: 32px;
+    font-size: 26px;
     color : #16d47b;
 
     @media screen and (max-width: 768px) {
