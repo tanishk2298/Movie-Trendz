@@ -1,6 +1,6 @@
 # Movie Trendz 🎬🍿
 
-A Movie info webapp made with ReactJS, which provides all the information of the user selected movie.
+A Movie info web app made with ReactJS, which provides all the information on the user-selected movie.
 
 ### Features 🔐:
 
