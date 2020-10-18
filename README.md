@@ -7,7 +7,7 @@ A Movie info webapp made with ReactJS, which provides all the information of the
 - Displays Trending Movies
 - Movie Search Functionality
 - Provides details like : 
-- > IMDB Rating, Runtime, Budget, Directors, Cast, Language etc. 
+> IMDB Rating, Runtime, Budget, Directors, Cast, Language etc. 
 
 ### Technologies 💻:
 
