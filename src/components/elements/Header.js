@@ -11,7 +11,7 @@ const Header = () => (
             <Link to="/">
             <StyledLogo src={Logo} alt="logo" target="_blank" className="logo"/>
             </Link>
-            <a href="https://github.com/tanishk2298" target="_blank" rel="noopener noreferrer">
+            <a href="https://github.com/tanishk2298/Movie-Trendz" target="_blank" rel="noopener noreferrer">
                 <StyledGithub src={github} alt="github" className="logo"/>
             </a>
         </div>
