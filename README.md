@@ -28,6 +28,5 @@ npm install
 ```
 
 ### Test production before deploy
-```
+
 Check in browser on [http://localhost:3000/](http://localhost:3000/)
-```
