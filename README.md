@@ -13,7 +13,7 @@ A Movie info web app made with ReactJS, which provides all the information on th
 
 - ReactJS
 - Styled Components
-- TMBD API
+- TMDB API
 
 ### Live at 🌏:
 
